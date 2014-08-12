@@ -17,6 +17,18 @@ def trendchaser():
 
 	#Let's make some Beautiful Soup
 	soup = BeautifulSoup(page)
+firstH3 = soup.find('h3') # Start here
+uls = []
+for nextSibling in firstH3.findNextSiblings():
+    if nextSibling.name == 'h2':
+        break
+    if nextSibling.name == 'ul':
+        uls.append(nextSibling)
 
-	while trends < 10:
-		
+	for ul in sp:
+		for li in ul.findAll('li'):
+			if li.find('ul'):
+				break
+				trends.append(li)
+	print trends
+trendchaser()
