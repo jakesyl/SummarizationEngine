@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
+from __future__ import unicode_literals
 import logging
 from credentials import *#imports vars
-from __future__ import unicode_literals
 import requests
 from requests_oauthlib import OAuth1
 from urlparse import parse_qs
@@ -10,7 +10,6 @@ REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
 AUTHORIZE_URL = "https://api.twitter.com/oauth/authorize?oauth_token="
 ACCESS_TOKEN_URL = "https://api.twitter.com/oauth/access_token"
 
-CONSUMER_KEY = "YOUR_CONSUMER_KEY"
 CONSUMER_SECRET = "YOUR CONSUMER_SECRET"
 
 OAUTH_TOKEN = ""
@@ -66,4 +65,4 @@ if __name__ == "__main__":
         print r.json()
 #script modified from twitter eample script
 setup_oauth()
-get_oauth
+#get_oauth
