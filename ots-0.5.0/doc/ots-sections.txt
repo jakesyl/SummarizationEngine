@@ -1,5 +1,0 @@
-<SECTION>
-<FILE>ots</FILE>
-<TITLE>Core API</TITLE>
-</SECTION>
-
